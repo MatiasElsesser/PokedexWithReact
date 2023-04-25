@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+.pokecard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    border: 2px solid #535bf2;
+    border-radius: 15px;
+}
+
+.pokecard-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pokecard-name {
+    font-size: 1.1rem;
+}
+.pokecard-header img {
+    object-fit: cover;
+}
+
+
+.types {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.types p {
+    width: 40%;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid #000;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.stats-content {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.stats-content p {
+    width: 60px;
+    height: 30px;
+    padding: 15px;
+    margin: 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.bar {
+    width: 150px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.progress-bar {
+    height: 100%; 
+    background-color: #535bf2;
+    border-radius: 15px;
+    width: 50%;
+}
